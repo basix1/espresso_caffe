@@ -1,9 +1,10 @@
+// App.tsx
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import AuthLayout from './app/(auth)/_layout';    // <-- contiene Login e Signup
-import TabLayout from './app/(tabs)/_layout';     // <-- contiene Home, Chat, Profile
+import AuthLayout from './(auth)/_layout';    // <-- contiene Login & Signup
+import TabLayout from './(tabs)/_layout';     // <-- contiene Home, Chat, Profile
 
 export type RootStackParamList = {
   Auth: undefined;
