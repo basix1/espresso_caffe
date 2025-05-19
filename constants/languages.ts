@@ -31,36 +31,7 @@ export const LANGUAGES: Language[] = [
     nativeName: 'Deutsch',
     flag: '🇩🇪'
   },
-  {
-    code: 'pt',
-    name: 'Portuguese',
-    nativeName: 'Português',
-    flag: '🇵🇹'
-  },
-  {
-    code: 'nl',
-    name: 'Dutch',
-    nativeName: 'Nederlands',
-    flag: '🇳🇱'
-  },
-  {
-    code: 'ru',
-    name: 'Russian',
-    nativeName: 'Русский',
-    flag: '🇷🇺'
-  },
-  {
-    code: 'ja',
-    name: 'Japanese',
-    nativeName: '日本語',
-    flag: '🇯🇵'
-  },
-  {
-    code: 'zh',
-    name: 'Chinese',
-    nativeName: '中文',
-    flag: '🇨🇳'
-  }
+  
 ];
 
 export const DEFAULT_LANGUAGE = 'en';

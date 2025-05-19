@@ -14,11 +14,16 @@ type NavigationProp = NativeStackNavigationProp<AuthStackParamList>;
 
 export default function Welcome() {
   const navigation = useNavigation<NavigationProp>();
-  const [language, setLanguage] = DEFAULT_LANGUAGE;
+  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
+  const [, forceUpdate] = useState(0);
 
   const handleLanguageChange = (languageCode: string) => {
     i18n.locale = languageCode;
+    setLanguage(languageCode); // AGGIORNA LO STATO
+    forceUpdate(n => n + 1); // forza re-render
+
   };
+
 
   const handleSignIn = () => navigation.navigate('Login');
   const handleSignUp = () => navigation.navigate('Signup');
